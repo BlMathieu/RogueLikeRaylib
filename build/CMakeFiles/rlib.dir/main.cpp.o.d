@@ -1,10 +1,13 @@
-CMakeFiles/rlib.dir/main.cpp.o: /home/mb/Bureau/rlib/src/main.cpp \
- /usr/include/stdc-predef.h /home/mb/Bureau/rlib/src/./engine/Window.hpp \
- /home/mb/Bureau/rlib/src/./engine/../entity/character/Player.hpp \
- /home/mb/Bureau/rlib/src/./engine/../entity/character/../AbstractEntity.hpp \
+CMakeFiles/rlib.dir/main.cpp.o: \
+ /home/mb/Bureau/RogueLikeRaylib/src/main.cpp /usr/include/stdc-predef.h \
+ /home/mb/Bureau/RogueLikeRaylib/src/./engine/Window.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/./engine/../entity/character/Player.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/./engine/../entity/character/../AbstractEntity.hpp \
  /usr/include/raylib.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
- /home/mb/Bureau/rlib/src/./engine/../entity/character/../projectile/Bullet.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/./engine/../entity/character/../weapon/Glock.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/./engine/../entity/character/../weapon/AbstractGun.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/./engine/../entity/character/../weapon/../projectile/Bullet.hpp \
  /usr/include/c++/14.2.1/vector \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -53,6 +56,6 @@ CMakeFiles/rlib.dir/main.cpp.o: /home/mb/Bureau/rlib/src/main.cpp \
  /usr/include/c++/14.2.1/backward/binders.h \
  /usr/include/c++/14.2.1/bits/range_access.h \
  /usr/include/c++/14.2.1/bits/vector.tcc \
- /home/mb/Bureau/rlib/src/./engine/../map/MapGeneration.hpp \
- /home/mb/Bureau/rlib/src/./engine/../map/data/Terrain.hpp \
- /home/mb/Bureau/rlib/src/./engine/../map/data/AbstractData.hpp
+ /home/mb/Bureau/RogueLikeRaylib/src/./engine/../map/MapGeneration.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/./engine/../map/data/Terrain.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/./engine/../map/data/AbstractData.hpp

@@ -6,6 +6,7 @@ Window::Window(float screenWidth, float screenHeight, int framerate){
   SetTargetFPS(framerate);
   this->player = Player();
   this->mapGeneration = MapGeneration();
+  this->player.loadTexture();
   this->mapGeneration.loadTexture();
 }
 

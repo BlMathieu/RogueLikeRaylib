@@ -14,7 +14,6 @@ private:
 public:
   Bullet(Vector2 position, Vector2 mousePos);
   void draw() override;
-  void update() override;
+  void update();
   bool isExpired();
-
 };

@@ -5,23 +5,29 @@
 #include <raylib.h>
 #include <vector>
 
-Player::Player() {
+Player::Player(){
   this->bullets = std::vector<Bullet>();
   this->height = 20;
   this->width = 20;
   this->position = {GetScreenWidth() / 2 - this->width / 2, GetScreenHeight() / 2 - this->height / 2};
-  
   this->up = false;
   this->down = false;
   this->left = false;
   this->right = false;
-
   this->isRunning = false;
-
   this->moveSpeed = {0,0};
-
   this->walkSpeed = 5;
   this->runSpeed = this->walkSpeed * 2;
+
+
+}
+
+void Player::setGun(AbstractGun gun){
+  //this->gun = gun;
+}
+
+void Player::loadTexture(){
+  this->gun.loadTexture();
 }
 
 void Player::checkMovement() {
@@ -90,14 +96,14 @@ void Player::move() {
 
 void Player::shoot() {
   if (IsMouseButtonPressed(MOUSE_BUTTON_LEFT)) {
-    Vector2 mousePos = GetMousePosition();
-    Bullet bullet = Bullet(this->position, mousePos);
-    this->bullets.push_back(bullet);
+    this->bullets.push_back(this->gun.shoot());
   }
 }
 
 void Player::update() {
   this->move();
+  this->gun.update(this->position);
+
   this->shoot();
   for (Bullet &bullet : bullets) {
     bullet.update();
@@ -106,12 +112,10 @@ void Player::update() {
   std::copy_if(bullets.begin(), bullets.end(), std::back_inserter(activeBullets), [](Bullet &bullet) { return !bullet.isExpired(); });
   this->bullets = activeBullets;
 }
+
 void Player::draw() {
- // DrawText(TextFormat("PosX : %f", this->position.x), 0, 0, 25, WHITE);
- // DrawText(TextFormat("PosY : %f", this->position.y), 0, 20, 25, WHITE);
- // DrawText(TextFormat("nb : %i", this->bullets.size()), 0, 40, 25, WHITE);
- // DrawText(TextFormat("time : %d", clock() / 100000), 0, 60, 25, WHITE);
   DrawRectangle(this->position.x, this->position.y, this->width, this->height, RED);
+  this->gun.draw();
   for (Bullet &bullet : bullets) {
     bullet.draw();
   }

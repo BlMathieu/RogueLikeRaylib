@@ -6,6 +6,5 @@ protected:
 
 public:
   AbstractEntity();
-  virtual void update() = 0;
   virtual void draw() = 0;
 };

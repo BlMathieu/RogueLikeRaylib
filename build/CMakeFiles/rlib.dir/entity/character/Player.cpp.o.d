@@ -1,11 +1,13 @@
 CMakeFiles/rlib.dir/entity/character/Player.cpp.o: \
- /home/mb/Bureau/rlib/src/entity/character/Player.cpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/entity/character/Player.cpp \
  /usr/include/stdc-predef.h \
- /home/mb/Bureau/rlib/src/entity/character/Player.hpp \
- /home/mb/Bureau/rlib/src/entity/character/../AbstractEntity.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/entity/character/Player.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/entity/character/../AbstractEntity.hpp \
  /usr/include/raylib.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stdarg.h \
- /home/mb/Bureau/rlib/src/entity/character/../projectile/Bullet.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/entity/character/../weapon/Glock.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/entity/character/../weapon/AbstractGun.hpp \
+ /home/mb/Bureau/RogueLikeRaylib/src/entity/character/../weapon/../projectile/Bullet.hpp \
  /usr/include/c++/14.2.1/vector \
  /usr/include/c++/14.2.1/bits/requires_hosted.h \
  /usr/include/c++/14.2.1/x86_64-pc-linux-gnu/bits/c++config.h \

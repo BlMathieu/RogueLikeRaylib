@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mb/Bureau/rlib/src
+CMAKE_SOURCE_DIR = /home/mb/Bureau/RogueLikeRaylib/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mb/Bureau/rlib/build
+CMAKE_BINARY_DIR = /home/mb/Bureau/RogueLikeRaylib/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mb/Bureau/rlib/build/CMakeFiles /home/mb/Bureau/rlib/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mb/Bureau/RogueLikeRaylib/build/CMakeFiles /home/mb/Bureau/RogueLikeRaylib/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mb/Bureau/rlib/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mb/Bureau/RogueLikeRaylib/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -225,6 +225,54 @@ entity/projectile/Bullet.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlib.dir/build.make CMakeFiles/rlib.dir/entity/projectile/Bullet.cpp.s
 .PHONY : entity/projectile/Bullet.cpp.s
 
+entity/weapon/AbstractGun.o: entity/weapon/AbstractGun.cpp.o
+.PHONY : entity/weapon/AbstractGun.o
+
+# target to build an object file
+entity/weapon/AbstractGun.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlib.dir/build.make CMakeFiles/rlib.dir/entity/weapon/AbstractGun.cpp.o
+.PHONY : entity/weapon/AbstractGun.cpp.o
+
+entity/weapon/AbstractGun.i: entity/weapon/AbstractGun.cpp.i
+.PHONY : entity/weapon/AbstractGun.i
+
+# target to preprocess a source file
+entity/weapon/AbstractGun.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlib.dir/build.make CMakeFiles/rlib.dir/entity/weapon/AbstractGun.cpp.i
+.PHONY : entity/weapon/AbstractGun.cpp.i
+
+entity/weapon/AbstractGun.s: entity/weapon/AbstractGun.cpp.s
+.PHONY : entity/weapon/AbstractGun.s
+
+# target to generate assembly for a file
+entity/weapon/AbstractGun.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlib.dir/build.make CMakeFiles/rlib.dir/entity/weapon/AbstractGun.cpp.s
+.PHONY : entity/weapon/AbstractGun.cpp.s
+
+entity/weapon/Glock.o: entity/weapon/Glock.cpp.o
+.PHONY : entity/weapon/Glock.o
+
+# target to build an object file
+entity/weapon/Glock.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlib.dir/build.make CMakeFiles/rlib.dir/entity/weapon/Glock.cpp.o
+.PHONY : entity/weapon/Glock.cpp.o
+
+entity/weapon/Glock.i: entity/weapon/Glock.cpp.i
+.PHONY : entity/weapon/Glock.i
+
+# target to preprocess a source file
+entity/weapon/Glock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlib.dir/build.make CMakeFiles/rlib.dir/entity/weapon/Glock.cpp.i
+.PHONY : entity/weapon/Glock.cpp.i
+
+entity/weapon/Glock.s: entity/weapon/Glock.cpp.s
+.PHONY : entity/weapon/Glock.s
+
+# target to generate assembly for a file
+entity/weapon/Glock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rlib.dir/build.make CMakeFiles/rlib.dir/entity/weapon/Glock.cpp.s
+.PHONY : entity/weapon/Glock.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -342,6 +390,12 @@ help:
 	@echo "... entity/projectile/Bullet.o"
 	@echo "... entity/projectile/Bullet.i"
 	@echo "... entity/projectile/Bullet.s"
+	@echo "... entity/weapon/AbstractGun.o"
+	@echo "... entity/weapon/AbstractGun.i"
+	@echo "... entity/weapon/AbstractGun.s"
+	@echo "... entity/weapon/Glock.o"
+	@echo "... entity/weapon/Glock.i"
+	@echo "... entity/weapon/Glock.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

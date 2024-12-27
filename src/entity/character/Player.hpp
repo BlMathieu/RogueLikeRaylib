@@ -1,5 +1,5 @@
 #include "../AbstractEntity.hpp"
-#include "../projectile/Bullet.hpp"
+#include "../weapon/Glock.hpp"
 #include <vector>
 class Player:public AbstractEntity {
 private:
@@ -18,6 +18,8 @@ private:
   double walkSpeed;
   double runSpeed;
   int shootCooldown;
+
+  AbstractGun gun = Glock();
   std::vector<Bullet> bullets;
   void checkMovement();
   void move();
@@ -25,6 +27,8 @@ private:
 
 public:
   Player();
+  void loadTexture();
+  void setGun(AbstractGun gun);
   void draw() override;
-  void update() override;
+  void update();
 };
